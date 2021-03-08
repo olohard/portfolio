@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-list{
+    display: inline-block;
+    list-style: none;
+    justify-content: space-around;
+    align-items: auto;
+    background: black;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}

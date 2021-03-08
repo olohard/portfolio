@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% block linker %}{% endblock %}
+
+    <title>Aleksander Wcisło | {% block title %}{% endblock %}</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a class="nav-link" href="/">Start</a></li>
+            <li><a class="nav-link" href="/about">About me</a></li>
+            <li><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
